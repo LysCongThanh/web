@@ -1,0 +1,16 @@
+//header
+@import './header';
+
+//section
+.section-heading h1{
+    position: relative;
+    font-size: 3.5rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+@import './gioithieu'
