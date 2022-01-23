@@ -6,51 +6,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
-    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/sass/style.css">
     <link rel="shortcut icon" href="images/logo.png">
 </head>
-<body>  
+<body> 
     <header class="header"> 
-        <a class="return" href="#">
-            <img src="./images/logo.png" alt="Logo" class="logo">  
-        </a>
-        <div class="menu">
-            <div class="menu-burger"></div>
-        </div>
-        <div class="clip-path-header">
-        </div>
-        <nav class="top-nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="#" class="nav-link">Trang chủ</a>
-                </li>
-                <li>
-                    <a href="#gioithieu" class="nav-link">Giới thiệu</a>
-                </li>
-                <li>
-                    <a href="#services" class="nav-link">Dịch vụ</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="nav-link">Images/Video</a>
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link">Liên hệ</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section id="gioithieu">
-        <div class="section-heading"><h1>Giới thiệu</h1></div>
-        <div class="container">
-            <img src="./images/bb.jpg" alt="" data-aos="fade-right" data-aos-delay="300">
-            <div class="content-gioithieu" data-aos="fade-left" data-aos-delay="500">
-                <h2>Tet 2022</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, deleniti aliquid. Architecto natus molestiae dolorum enim consequatur repellat </h3>
-                <p class="detail">Chi tiết</p>
+        <div class="nav">
+            <a class="return" href="#">
+                <img src="./images/logo.png" alt="Logo" class="logo">  
+            </a>
+            <div class="menu">
+                <div class="menu-burger"></div>
+            </div>
+            <div class="clip-path-header">
+            </div>
+            <div class="top-nav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="#tab_1" class="nav-link" id="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#tab_2" class="nav-link">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#tab_3" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#tab_4" class="nav-link">Images/Video</a>
+                    </li>
+                    <li>
+                        <a href="#tab_5" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </header>
+    <div class="tab-content">
+        <div id="tab_1" class="tab-content-item">
+            <div class="container">
+                <div class="landing-header">
+                    <div class="clip-path-header"></div>
+                    <div class="landing-text">
+                        <h2>TUNG BUNG KHAI TRUONG 01/01/2022 (TET TAY)</h2>
+                        <h1>Làng Du Lịch Sinh Thái Ông Đề</h1>
+                        <button class="bubbly-btn-detail">Kham Pha</button>
+                    </div>
+                    <svg class="path-har-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fff" fill-opacity="1" d="M0,32L120,69.3C240,107,480,181,720,176C960,171,1200,85,1320,42.7L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+                    </svg>
+                </div>
+                <!-- service -->
+                <div class="container_service">
+                    <div class="section-heading">
+                        <h1 class="landing-text-heading">Dịch vụ tiêu biểu</h1>
+                    </div>
+                    <div class="services">
+                        <div class="service">
+                            <img data-aos="flip-up" data-aos-delay="300" src="https://ongde.vn/upload/tintuc/210673044511.jpg" alt="">
+                            <div class="content-card">
+                                <h3 id="text-card" data-aos="fade-up">
+                                    Phim truong tet 
+                                </h3>
+                                <button class="detail" data-aos="fade-up">Chi tiết</button>
+                            </div>
+                            <div class="detail-content1">
+                                <div class="close1">
+                                    <span></span>
+                                </div>
+                                <div class="container-detail1">
+                                    <h1 id="landing-detail">PHIM TRƯỜNG TẾT XUÂN NHÂM DẦN 2022</h1>
+                                    <p>LÀNG DU LỊCH SINH THÁI ÔNG ĐỀ<br>
+                                        TƯNG BỪNG KHAI TRƯƠNG 01/01/2022 (TẾT TÂY) <br>
+                                        CHÀO XUÂN NHÂM DẦN 
+                                    </p>
+                                    <p>
+                                        “Thiên đường vui chơi, ăn uống tại Thành phố Cần Thơ ” Làng Du Lịch Sinh Thái Ông Đề chính thức khai trương đón chào khách trở lại ngày 01/01/2022 (Tết Tây) nhằm chào đón Xuân Nhâm Dần 2022 
+                                        Sau khoảng thời gian dài cùng chung tay chống dịch Ông Đề đã hoàn thiện tất cả các khâu chuẩn bị, đảm bảo an toàn tuyệt đối và sẵn sàng phục vụ tất cả Quý khách gần xa đến với Làng Du Lịch Sinh Thái Ông Đề .
+                                    </p>
+                                    <img class="img-service-detail" src="http://ongde.vn/upload/268961688_3036209763361722_1039522785616081683_n.jpg" alt="">
+                                    <p>
+                                        Với hệ thống trò chơi dân gian đậm chất miền Tây kết hợp hiện đại vừa mới mẻ lại vừa thân quen như: Cầu nhúng, Đi xe đạp qua cầu khỉ, Đu dây qua mương, Giữ thăng bằng trên cầu ván, Tát mương bắt cá, Nhảy bao bố v.v… Và còn rất nhiều hoạt động vui chơi giải trí hấp dẫn, hứa hẹn mang đến niềm vui cho tất cả mọi người 
+                                    </p>
+                                    <img class="img-service-detail" src="http://ongde.vn/upload/159862332_4017819091615116_5800274358318035097_n.jpg" alt="">
+                                    <img class="img-service-detail" src="http://ongde.vn/upload/166340288_4067347653328926_251985913875459589_n.jpg" alt="">
+                                    <p>
+                                        Thiên đường ẩm thực đậm chất miền Tây sẵn sàng đợi Bạn thưởng thức với vô vàn các món ăn bình dân được trang trí bắt mắt, mộc mạc nhưng hấp dẫn, dân dã cực kì chất lượng như: Bánh xèo, Bánh khọt, Gỏi cuốn, Gỏi ngó sen, Cá lóc nướng, Cá tai tượng chiên xù, Ếch chiên nước mắm, Lẩu mắm,v.v… sẽ đánh thức mọi giác quan của Bạn 
+                                    </p>
+                                    <img class="img-service-detail" src="http://ongde.vn/upload/z2374698775687_0e8035eb0650089cda19db298523ac31.jpg" alt="">
+                                    <p>
+                                        Đặc biệt Phim Trường Tết Ông Đề 2022 đẹp nhất nhì TP Cần Thơ với vô số tiểu cảnh Tết Xưa, những làng nghề truyền thống, những loại bánh dân gian được đầu tư bài bản, xây dựng có quy trình đảm bảo sự đặc trưng, riêng biệt không hoà lẫn vào chỗ khác, cùng với Vườn hoa cúc mâm xôi siêu to, Ao sen thơ mộng, View Đà Lạt lãng mạn, View cổ trang huyền bí khách hàng có thể thỏa sức Check-in mọi lúc mọi nơi với các góc view cực chuẩn, cực xịn xò khắp mọi ngóc ngách tại Làng Du Lịch Ông Đề
+                                    </p>
+                                    <img class="img-service-detail" src="http://ongde.vn/upload/268839955_4904638669599816_5386352795206912380_n.jpg" alt="">
+                                    <p>
+                                        Hệ thống homestay miệt vườn giúp khách hàng thư giãn, thoải mái nhất khi lựa chọn nghỉ ngơi tại nơi đây <br>
+                                        Hãy liên hệ ngay với chúng tôi để trải nghiệm tất cả những dịch vụ tốt nhất tại Làng Du Lịch Ông Đề! <br>
+                                        LÀNG DU LỊCH SINH THÁI ÔNG ĐỀ - ĐIỂM DU LỊCH ĐẾN HOT NHẤT TẠI TP CẦN THƠ  <br>
+                                    </p>
+                                    <p>
+                                        - Địa chỉ: Tổ 26, ấp Mỹ Ái, xã Mỹ Khánh, huyện Phong Điền, TP Cần Thơ. <br>
+                                        - Điện Thoại :02923 943 113 <br>
+                                        - Hotline : 0931 852 113 <br>
+                                        - Đường dây nóng đóng góp ý kiến 0901273222 (Mr Thông) <br>
+                                        - Zalo hỗ trợ : 078 2918222 <br>
+                                        - Mail : dulichongde@gmail.com <br>
+                                        - Website : www.ongde.vn <br>
+                                    </p>
+                                    <img class="img-service-detail" src="http://ongde.vn/upload/269688478_4904638696266480_4581906056835761053_n.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service" >
+                            <img data-aos="flip-up" data-aos-delay="600" src="https://ongde.vn/upload/tintuc/321798907327.jpg" alt="">
+                            <div class="content-card">
+                                <h3 id="text-card" data-aos="fade-up">
+                                    Kham pha am thuc Ong De
+                                </h3>
+                                <button class="detail2" data-aos="fade-up">Chi tiết</button>
+                            </div>
+                            <div class="detail-content2">
+                                <div class="close2">
+                                    <span></span>
+                                </div>
+                                <div class="container-detail2">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service" >
+                            <img data-aos="flip-up" data-aos-delay="900" src="https://ongde.vn/upload/tintuc/227931858483.jpg" alt="">
+                            <div class="content-card" data-aos="fade-up">
+                                <h3 id="text-card" data-aos="fade-up">
+                                    Thoa suc tro choi dan gian
+                                </h3>
+                                <button class="detail3" data-aos="fade-up">Chi tiết</button>
+                            </div>
+                            <div class="detail-content3">
+                                <div class="close3">
+                                    <span></span>
+                                </div>
+                                <div class="container-detail3">
+                                    3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--?-->
+                <!-- <div class="container_Od">
+                    <div class="port-img"data-aos="zoom-in" data-aos-delay="350">
+                        <div class="section-heading-port-img">
+                            <h1 class="landing-text-heading-child">Khach hang noi gi ve Ong De</h1>
+                        </div>
+                    </div>
+                </div> -->
+                <section class="about">
+                    <div class="container-about">
+                        <div class="container-port-img">
+                            <img data-aos="zoom-in" src="" class="port-img">
+                            <div class="section-heading-port-img">
+                                <h1 class="landing-text-heading-child">Khach hang noi gi ve Ong De</h1>
+                            </div>
+                        </div>
+                        <div class="about-detail" data-aos="zoom-out" data-aos-delay="300">
+                            <div class="about-heading">
+                                <h1>About</h1>
+                                <h6>Myself</h6>
+                            </div>
+                            <p class="text-about">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                                Est ratione vero cumque voluptatum quos facere, explicabo <br> 
+                                eligendi, adipisci repudiandae aspernatur maxime nisi iusto <br> 
+                                laborum expedita inventore omnis laboriosam ut optio.(doan van ban)
+                            </p>
+                            <div class="social-media">
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank" class="icon-link">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="icon-link">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" class="icon-link">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- video -->
+                <div class="section-heading">
+                    <h1 class="landing-text-heading">Video</h1>
+                </div>
+            </div>
+        </div>
+        <div id="tab_2" class="tab-content-item">2</div>
+        <div id="tab_3" class="tab-content-item">3</div>
+        <div id="tab_4" class="tab-content-item">4</div>
+        <div id="tab_5" class="tab-content-item">5</div>
+    </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="./main.js"></script>

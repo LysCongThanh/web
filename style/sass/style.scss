@@ -1,7 +1,15 @@
 @import './global';
 @import './reset';
 @import './mixin';
+// @font-face {
+//     font-family: 'Pacifico';
+//     src: url(/font/Poppins-Thin.otf);
+// }
 @font-face {
-    font-family: 'Poppins-Thin';
-    src: url(/font/Poppins-Thin.otf);
+    font-family: 'Pacifico';
+    src: url(../font/iCielPacifico.otf);
+}
+@font-face {
+  font-family: 'Lexend';
+  src: url(../font/LexendDeca-Regular.ttf);
 }

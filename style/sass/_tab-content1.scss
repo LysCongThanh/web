@@ -1,0 +1,231 @@
+.container{
+    .container_service{
+        position: relative;
+        width: 100%;
+        background-image: url('../Abract01.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 100%;
+        width: 100%;
+        background-size: 65%;
+        .services{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-gap: 2.5rem;
+            text-align: center;
+            padding:2rem 2rem 2rem 2rem;
+            .service{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                background-color: transparent;
+                box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+                width: 30rem;
+                margin: auto;
+                img{
+                    width: 100%;
+                }
+                .content-card{
+                    padding: 0 2rem 2rem;
+                    #text-card{
+                        font-size: 2rem;
+                        text-align: center;
+                        font-family: cursive;
+                        padding-top: 2rem;
+                    }
+                    button{
+                        margin: 2rem 0;
+                        font-size: 2rem;
+                        outline: none;
+                        border: none;
+                        padding: .5rem 1rem;
+                        background-color: rgb(117, 135, 239);
+                        border-radius: 1rem;
+                        font-family: cursive;
+                        color: white;
+                        transition: .5s ease;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .landing-header{
+        position: relative;
+        background-image: url(https://ongde.vn/upload/slider/693199712072267.jpg);
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .path-har-bottom{
+            position: absolute;
+            bottom: 0;
+        }
+        .landing-text{
+            position: absolute;
+            text-align: center;
+            bottom: 11.5rem;
+            z-index: 1;
+            h2{
+                font-size: 2rem;
+                font-family: cursive;
+                color: white;
+            }
+            h1{
+                font-size: 4rem;
+                color: white;
+                font-family: cursive;
+                padding-bottom: 2rem;
+            }
+            @import './bubbly-btn';
+        }
+    }
+    .section-heading{
+        position: relative;
+        text-align: center;
+        padding: 5rem 0 ;
+        h1{
+            color: #383838;
+            font-size: 4rem;
+            font-weight: 300;
+            font-family: 'Pacifico';
+            margin: auto;
+            padding: 1.5rem 0;
+            border-radius: 50px;
+        }
+    }
+    .section-heading::after{
+        position: absolute;
+        content: '';
+        width: 30rem;
+        height: 1rem;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.detail-content1{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: -1000vh;
+    left: 0;
+    z-index: 10000;
+    transition: .5s ease-in-out;
+    overflow-y:scroll;
+}
+
+span{
+    position: absolute;
+    width: 8px;
+    height: 50px;
+    background-color: black;
+    transform: rotate(45deg);
+    border-radius: 4px;
+}
+span::after{
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 50px;
+    background-color: black;
+    transform: rotate(90deg);
+    border-radius: inherit;
+}
+
+.close1{
+    top: 1rem;
+    right: 2rem;
+    position: absolute;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-content1.open{
+    top:0;
+}
+
+.detail-content2{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: -1000vh;
+    left: 0;
+    z-index: 10000;
+    transition: .5s ease-in-out;
+    overflow-y: auto;
+}
+
+.close2{
+    top: 1rem;
+    right: 2rem;
+    position: absolute;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-content2.open{
+    top:0;
+}
+
+
+.detail-content3{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: -1000vh;
+    left: 0;
+    z-index: 10000;
+    transition: .5s ease-in-out;
+    overflow-y: auto;
+}
+
+.close3{
+    top: 1rem;
+    right: 2rem;
+    position: absolute;
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-content3.open{
+    top:0;
+}
+
+.container-detail1{
+    position: relative;
+    background-color: white;
+    padding: 0rem 5rem;
+    #landing-detail{
+        margin-top: 7rem;
+    }
+    p{
+        padding: 2rem;
+        text-align: left;
+    }
+    .img-service-detail{
+        width: 50rem !important;
+    }
+}
+@import './about';
